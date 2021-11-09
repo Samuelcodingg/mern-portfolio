@@ -2,7 +2,7 @@
 import React from 'react';
 import { 
     BrowserRouter as Router, 
-    Routes,
+    Switch,
     Route    
 } from 'react-router-dom';
 import { HomePage } from '../components/homepage/HomePage';
@@ -14,9 +14,12 @@ export const AppRouter = () => {
             <NavbarComponent />
 
             <div>
-                <Routes>
-                    <Route path="/" element={<HomePage />} />
-                </Routes>
+                <Switch>
+                    <Route exac path="/" element={<HomePage />} />
+                    <Route exac path="/projects" element={<HomePage />} />
+                    <Route exac path="/about" element={<HomePage />} />
+                    <Route component={HomePage} />
+                </Switch>
             </div>
 
         </Router>
