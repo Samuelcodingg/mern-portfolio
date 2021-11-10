@@ -20,6 +20,20 @@ body {
 }
 
 .bg-active {
-  background-color: #6f948f !important;
+  background-color: #b6ddd7 !important;
 }
 
+.height-icon {
+  font-size: 25px;
+}
+
+/*navbar*/
+
+.nav-link-port {
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link-port:hover {
+  background-color: #bee9e2;
+  color: #00BFA6!important;
+}
