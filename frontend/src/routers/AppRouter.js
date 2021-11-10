@@ -13,9 +13,9 @@ export const AppRouter = () => {
         <Router>
             <NavbarComponent />
 
-            <div>
+            <div className="container mt-5">
                 <Switch>
-                    <Route exac path="/" element={<HomePage />} />
+                    <Route exac path="/" component={HomePage} />
                     <Route exac path="/projects" element={<HomePage />} />
                     <Route exac path="/about" element={<HomePage />} />
                     <Route component={HomePage} />

@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif !important;
 }
 
 /*utilities*/
@@ -36,4 +36,28 @@ body {
 .nav-link-port:hover {
   background-color: #bee9e2;
   color: #00BFA6!important;
+}
+
+/*homepage*/
+.cursor {
+  display: inline-block;
+  width: 2px;
+  background-color: black;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.height-img-homepage {
+  height: 300px;
 }
