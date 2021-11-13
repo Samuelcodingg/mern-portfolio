@@ -9,6 +9,11 @@ body {
   font-family: 'Roboto', sans-serif !important;
 }
 
+:root {
+  --animate-duration: 3000ms !important;
+  --animate-delay: 3s!important;
+}
+
 /*utilities*/
 
 .primary-color {
@@ -60,4 +65,22 @@ body {
 
 .height-img-homepage {
   height: 300px;
+}
+
+@media (max-width: 768px) {
+  .navbar a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .list-icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .list-icons a{
+    padding: 9px 14px !important;
+  }
 }
