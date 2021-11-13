@@ -14,14 +14,19 @@ body {
   --animate-delay: 3s!important;
 }
 
+
 /*utilities*/
 
 .primary-color {
   color: #00BFA6;
 }
 
-.bg-primary {
+.bg-primary-color {
   background-color: #00BFA6 !important;
+}
+
+.border-primary-color {
+  border: 1px solid #00BFA6 !important;
 }
 
 .bg-active {

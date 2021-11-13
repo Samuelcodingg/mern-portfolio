@@ -1,4 +1,7 @@
+import { faFolder, faUser } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { getCoder } from '../../api/coder';
 import imgCoding from './undraw_freelancer_re_irh4.svg';
 
@@ -31,12 +34,25 @@ export const HomePage = () => {
                     <h1 className="text-center primary-color fs-1"> {name} </h1>
                     <h5 className="text-center fs-4 mt-2"><span className="typed-text"> {title}</span><span className="cursor typing">&nbsp;</span></h5>
                     <p className="fs-5 text-secondary mt-4" > {first_description} </p>
+                    <div className="row text-center d-flex align-items-center">
+                        <Link
+                            to="/about"
+                            className="bg-primary-color text-white text-decoration-none d-block col-5 rounded py-2 mx-auto"
+                        >
+                            VER PERFIL  <FontAwesomeIcon icon={faUser} />
+                        </Link>
+                        <Link 
+                            to="/projects" 
+                            className="col-5 offset-1 mx-auto text-decoration-none d-block border-primary-color primary-color py-2" 
+                        >
+                            VER PROYECTOS <FontAwesomeIcon icon={faFolder} />
+                        </Link>
+                    </div>
                 </div>
                 <div className="col-md-6 mx-auto d-none d-md-block">
                     <img src={imgCoding} alt="coding" className="height-img-homepage img-fluid"/>
                 </div>
             </div>
-
         </div>
     )
 }
