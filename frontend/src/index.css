@@ -18,7 +18,7 @@ body {
 /*utilities*/
 
 .primary-color {
-  color: #00BFA6;
+  color: #00BFA6 !important;
 }
 
 .bg-primary-color {
@@ -35,6 +35,14 @@ body {
 
 .height-icon {
   font-size: 25px;
+}
+
+.hover-bg-dark:hover {
+  filter: brightness(0.8);
+}
+
+.animation-time {
+  transition: all 300ms;
 }
 
 /*navbar*/
