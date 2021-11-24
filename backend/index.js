@@ -17,6 +17,7 @@ mongoose.connect(process.env.DATABASE).then(() => { console.log('DB connected') 
 
 //setup routes
 app.use('/api/coders', require('./routes/coder'));
+app.use('/api/skills', require('./routes/skill'));
 
 const port = process.env.PORT || 5000;
 
