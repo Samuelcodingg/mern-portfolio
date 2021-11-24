@@ -33,3 +33,27 @@ exports.createSkill = async (req, res) => {
         }
     });
 };
+
+exports.getSkills = async (req, res) => {
+    const skills = await Skill.find();
+    res.json(skills);
+};
+
+exports.skillById = async (req, res, next, id) => {
+    const skill = await Skill.findById(id);
+    if(!skill) {
+        return res.status(404).json({
+            error: 'Skill not found'
+        });
+    }
+    req.skill = skill;
+    next();
+};
+
+exports.photo = (req, res, next) => {
+    if(req.skill.photo.data) {
+        res.set('Content-Type', req.skill.photo.contentType);
+        return res.send(req.skill.photo.data);
+    }
+    next();
+};
