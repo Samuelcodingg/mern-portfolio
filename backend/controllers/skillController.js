@@ -57,3 +57,33 @@ exports.photo = (req, res, next) => {
     }
     next();
 };
+
+exports.updatePhoto = (req, res) => {
+    let form = new formidable.IncomingForm();
+    form.maxFileSize = 8000000;
+
+    form.keepExtensions = true;
+    form.parse(req, (err, fields, files) => {
+        if(err) {
+            return res.status(400).json({
+                error: 'Image could not be uploaded'
+            });
+        }
+        Skill.findById(req.params.skillId)
+            .exec((err, skill) => {
+                if(err) {
+                    return res.status(400).json({
+                        error: 'Skill not found'
+                    });
+                }
+                skill.photo.data = fs.readFileSync(files.photo.path);
+                skill.photo.contentType = files.photo.type;
+                skill.save()
+                    .then(skill => res.json(skill))
+                    .catch(err => res.status(400).json({
+                        error: 'Photo could not be updated'
+                    }));
+            }
+        );
+    });
+};
