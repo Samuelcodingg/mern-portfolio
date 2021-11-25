@@ -15,12 +15,12 @@ export const MainSection = ({ name, title, first_description }) => {
                 <h5 className="text-center fs-4 mt-2"><span className="typed-text"> {title}</span><span className="cursor typing">&nbsp;</span></h5>
                 <p className="fs-5 text-secondary mt-4" > {first_description} </p>
                 <div className="row text-center d-flex align-items-center">
-                    <Link
-                        to="/about"
+                    <a
+                        href='#perfil'
                         className="bg-primary-color text-white text-decoration-none d-block col-12 col-md-5 rounded fw-bold hover-bg-dark animation-time py-2 mx-auto"
                     >
                         VER PERFIL  <FontAwesomeIcon icon={faUser} />
-                    </Link>
+                    </a>
                     <Link
                         to="/projects"
                         className="col-12 col-md-5 offset-1 mt-4 mt-md-0 mx-auto text-decoration-none d-block border-primary-color fw-bold hover-bg-dark animation-time primary-color py-2"

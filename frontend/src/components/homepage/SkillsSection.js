@@ -11,13 +11,12 @@ export const SkillsSection = ({ second_description }) => {
         getSkills()
             .then(data => {
                 setSkills(data);
-                console.log(data);
             })
     }, []);
 
     return (
         <>
-            <div className="row mt-5 mb-3">
+            <div className="row mt-5 mb-3" id="perfil">
                 <div className="text-center col-md-6 mx-auto">
                     <img src={meImg} alt="certificate" className="img-me" />
                     <p className="text-start my-4">
