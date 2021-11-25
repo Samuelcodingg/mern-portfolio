@@ -1,6 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { getCoder } from '../../api/coder';
+import { ContactSection } from './ContactSection';
 import { MainSection } from './MainSection';
 import { SkillsSection } from './SkillsSection';
 
@@ -42,6 +43,8 @@ export const HomePage = () => {
             <div className="container">
                 <SkillsSection second_description={second_description} />
             </div>
+
+            <ContactSection />
         </div>
     )
 }

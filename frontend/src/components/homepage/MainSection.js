@@ -17,13 +17,13 @@ export const MainSection = ({ name, title, first_description }) => {
                 <div className="row text-center d-flex align-items-center">
                     <Link
                         to="/about"
-                        className="bg-primary-color text-white text-decoration-none d-block col-5 rounded fw-bold hover-bg-dark animation-time py-2 mx-auto"
+                        className="bg-primary-color text-white text-decoration-none d-block col-12 col-md-5 rounded fw-bold hover-bg-dark animation-time py-2 mx-auto"
                     >
                         VER PERFIL  <FontAwesomeIcon icon={faUser} />
                     </Link>
                     <Link
                         to="/projects"
-                        className="col-5 offset-1 mx-auto text-decoration-none d-block border-primary-color fw-bold hover-bg-dark animation-time primary-color py-2"
+                        className="col-12 col-md-5 offset-1 mt-4 mt-md-0 mx-auto text-decoration-none d-block border-primary-color fw-bold hover-bg-dark animation-time primary-color py-2"
                     >
                         VER PROYECTOS <FontAwesomeIcon icon={faFolder} />
                     </Link>

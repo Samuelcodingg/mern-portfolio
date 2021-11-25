@@ -26,7 +26,6 @@ export const SkillsSection = ({ second_description }) => {
                 </div>
             </div>
             <div className="row">
-
                 <div className="col-md-6 mx-auto">
                     <div className="row">
                         {
@@ -48,10 +47,6 @@ export const SkillsSection = ({ second_description }) => {
                         }
                     </div>
                 </div>
-
-
-
-
             </div>
         </>
     )

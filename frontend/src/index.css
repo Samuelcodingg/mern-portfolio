@@ -104,6 +104,10 @@ body {
   .img-me {
     height: 200px !important;
   }
+
+  .height-img-homepage {
+    height: 200px !important;
+  }
 }
 
 @media (max-width: 768px) {
