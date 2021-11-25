@@ -40,7 +40,7 @@ export const MainSection = ({ name, title, first_description }) => {
                             </div>
                         </div>
                         <Link 
-                            className="text-secondary text-decoration-none hover-bg-dark animation-time"
+                            className=" d-none d-md-block text-secondary text-decoration-none hover-bg-dark animation-time"
                             to="mailto: samuelroman39@gmail.com"    
                         >
                             ENVÍAME UN MENSAJE &nbsp;

@@ -11,6 +11,7 @@ import { ProjectsPage } from '../components/projectspage/ProjectsPage';
 import { NavbarComponent } from '../components/ui/NavbarComponent';
 
 import 'animate.css';
+import { Footer } from '../components/ui/Footer';
 
 export const AppRouter = () => {
     return (
@@ -25,6 +26,7 @@ export const AppRouter = () => {
                 </Switch>
             </div>
 
+            <Footer />
         </Router>
     )
 }
