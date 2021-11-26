@@ -23,6 +23,10 @@ const projectSchema = new mongoose.Schema(
         technologies: {
             type: Array,
             default: []
+        },
+        isPrivate: {
+            type: Boolean,
+            default: false
         }
     },
     {
