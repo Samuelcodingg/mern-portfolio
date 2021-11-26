@@ -65,3 +65,11 @@ exports.getProjectById = (req, res, next) => {
     }
     next();
 };
+
+exports.photo = (req, res, next) => {
+    if(req.project.photo.data) {
+        res.set('Content-Type', req.project.photo.contentType);
+        return res.send(req.project.photo.data);
+    }
+    next();
+};
