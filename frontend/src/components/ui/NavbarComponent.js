@@ -10,7 +10,7 @@ export const NavbarComponent = () => {
                 <NavLink 
                     to='/'
                     exact
-                    activeClassName="bg-active"
+                    activeClassName="bg-clear-color"
                     className="fw-bold nav-link-port text-decoration-none primary-color px-3 py-2 rounded"
                 >
                     Sobre mí
@@ -19,7 +19,7 @@ export const NavbarComponent = () => {
                 <NavLink
                     to='/projects'
                     exact
-                    activeClassName="bg-active"
+                    activeClassName="bg-clear-color"
                     className="fw-bold nav-link-port text-decoration-none primary-color px-3 py-2 rounded ms-2"
                 >
                     Proyectos
@@ -28,7 +28,7 @@ export const NavbarComponent = () => {
                 <NavLink
                     to='/about'
                     exact
-                    activeClassName="bg-active"
+                    activeClassName="bg-clear-color"
                     className="fw-bold nav-link-port text-decoration-none primary-color px-3 py-2 rounded ms-2"
                 >
                     Acerca

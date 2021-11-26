@@ -33,6 +33,10 @@ body {
   background-color: #b6ddd7 !important;
 }
 
+.bg-clear-color {
+  background-color: #d1fcf6 !important;
+}
+
 .height-icon {
   font-size: 25px;
 }
@@ -59,6 +63,10 @@ body {
   100% {
     transform: translateY(0px);
   }
+}
+
+.justify {
+  text-align: justify;
 }
 
 /*navbar*/
