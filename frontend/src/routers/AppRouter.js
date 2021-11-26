@@ -19,7 +19,7 @@ export const AppRouter = () => {
         <Router>
             <NavbarComponent />
 
-            <div className="container mt-0 mt-md-5 ">
+            <div className="container">
                 <Switch>
                     <Route exact path="/" component={HomePage} />
                     <Route exact path="/projects" component={ProjectsPage} />
