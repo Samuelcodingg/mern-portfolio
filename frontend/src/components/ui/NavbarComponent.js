@@ -20,7 +20,7 @@ export const NavbarComponent = () => {
                     to='/projects'
                     exact
                     activeClassName="bg-clear-color"
-                    className="fw-bold nav-link-port text-decoration-none primary-color px-3 py-2 rounded ms-2"
+                    className="fw-bold nav-link-port text-decoration-none primary-color px-3 py-2 rounded ms-0 ms-md-2"
                 >
                     Proyectos
                     <FontAwesomeIcon icon={faFolder} className="ms-2" />
@@ -29,7 +29,7 @@ export const NavbarComponent = () => {
                     to='/about'
                     exact
                     activeClassName="bg-clear-color"
-                    className="fw-bold nav-link-port text-decoration-none primary-color px-3 py-2 rounded ms-2"
+                    className="fw-bold nav-link-port text-decoration-none primary-color px-3 py-2 rounded ms-0 ms-md-2"
                 >
                     Acerca
                     <FontAwesomeIcon icon={faQuestionCircle} className="ms-2" />

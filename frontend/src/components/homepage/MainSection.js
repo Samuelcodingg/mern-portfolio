@@ -9,7 +9,7 @@ export const MainSection = ({ name, title, first_description }) => {
     const _id = '618c39b578524ca53dde04f9';
 
     return (
-        <div className="row">
+        <div className="row animate__animated animate__fadeIn">
             <div className="col-md-6 col-12">
                 <h1 className="text-center primary-color fs-1"> {name} </h1>
                 <h5 className="text-center fs-4 mt-2"><span className="typed-text"> {title}</span><span className="cursor typing">&nbsp;</span></h5>

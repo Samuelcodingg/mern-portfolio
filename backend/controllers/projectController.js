@@ -73,3 +73,40 @@ exports.photo = (req, res, next) => {
     }
     next();
 };
+
+exports.updatePhoto = (req, res) => {
+    let form = new formidable.IncomingForm();
+    form.maxFileSize = 8000000;
+
+    form.keepExtensions = true;
+    form.parse(req, (err, fields, files) => {
+        if(err) {
+            return res.status(400).json({
+                error: 'Image could not be uploaded'
+            });
+        }
+        Project.findById(req.params.projectId)
+            .exec((err, project) => {
+                if(err) {
+                    return res.status(400).json({
+                        error: 'Project not found'
+                    });
+                }
+                project.photo.data = fs.readFileSync(files.photo.path);
+                project.photo.contentType = files.photo.type;
+                project.save((err, result) => {
+                    if(err) {
+                        return res.status(400).json({
+                            error: err
+                        });
+                    }
+                    res.json(result);
+                }
+            );
+        });
+    });
+};
+
+
+
+
