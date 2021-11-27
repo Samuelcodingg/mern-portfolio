@@ -5,12 +5,17 @@ const cors = require('cors');
 
 const app = express();
 
+const corsOptions = {
+    origin: process.env.FRONTEND_URL
+};
 require('dotenv').config();
 
+
 //middlewares
+app.disable('x-powered-by');
 app.use(morgan('dev'));
 app.use(express.json());
-app.use(cors());
+app.use(cors(corsOptions));
 
 //db connection
 mongoose.connect(process.env.DATABASE).then(() => { console.log('DB connected') }).catch(err => { console.log(err) });

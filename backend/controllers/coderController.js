@@ -5,6 +5,7 @@ const fs = require('fs');
 
 exports.createCoder = async (req, res) => {
     let form = new formidable.IncomingForm();
+    form.maxFileSize = 8000000;
     form.keepExtensions = true;
     form.parse(req, async (err, fields, files) => {
         if(err) {
