@@ -3,7 +3,7 @@ import { getSkills } from '../../api/skills';
 import { API } from '../../config';
 import meImg from './undraw_certificate_-343-v.svg';
 
-export const SkillsSection = ({ second_description }) => {
+export const SkillsSection = () => {
 
     const [skills, setSkills] = useState([]);
 
@@ -20,13 +20,13 @@ export const SkillsSection = ({ second_description }) => {
                 <div className="text-center col-md-6 mx-auto">
                     <img src={meImg} alt="certificate" className="img-me" />
                     <p className="text-start my-4">
-                        {second_description}
+                        Actualmente resido en Lima, Perú. Siempre practico y aprendo distintas tecnlogías que se requieren en el mercado laboral. Actualmente trabajo y sigo mejorando en:
                     </p>
                 </div>
             </div>
             <div className="row">
                 <div className="col-md-6 mx-auto">
-                    <div className="row">
+                    <div className="row min-vh-100">
                         {
                             skills.map(skill => (
                                 <div className="col-6 col-md-4 mb-4 mx-auto" key={skill._id}>

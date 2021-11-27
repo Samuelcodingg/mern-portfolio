@@ -5,15 +5,17 @@ import { Link } from 'react-router-dom';
 import { API } from '../../config';
 import imgCoding from './undraw_freelancer_re_irh4.svg';
 
-export const MainSection = ({ name, title, first_description }) => {
+export const MainSection = () => {
     const _id = '618c39b578524ca53dde04f9';
 
     return (
         <div className="row animate__animated animate__fadeIn">
             <div className="col-md-6 col-12">
-                <h1 className="text-center primary-color fs-1 animate__animated animate__fadeIn"> {name} </h1>
-                <h5 className="text-center fs-4 mt-2"><span className="typed-text animate__animated animate__fadeIn"> {title}</span><span className="cursor typing">&nbsp;</span></h5>
-                <p className="fs-5 text-secondary mt-4 animate__animated animate__fadeIn" > {first_description} </p>
+                <h1 className="text-center primary-color fs-1 animate__animated animate__fadeIn">Samuel Román</h1>
+                <h5 className="text-center fs-4 mt-2"><span className="typed-text animate__animated animate__fadeIn">Desarrollador de Software</span><span className="cursor typing">&nbsp;</span></h5>
+                <p className="fs-5 text-secondary mt-4 animate__animated animate__fadeIn" >
+                    Soy un estudiante de Ingeniería de Software de la UNMSM, apasionado por el desarrollo de software y el aprender algo nuevo cada día.
+                </p>
                 <div className="row text-center d-flex align-items-center">
                     <a
                         href='#perfil'
@@ -35,8 +37,8 @@ export const MainSection = ({ name, title, first_description }) => {
                                 <img src={`${API}/coders/photo/${_id}`} alt="samuel-roman" className="rounded-circle img-fluid" style={{ height: '50px', width: '50px' }} />
                             </div>
                             <div className="ms-2">
-                                <h5 className="mb-0">{name}</h5>
-                                <p className="text-secondary mb-0">{title}</p>
+                                <h5 className="mb-0">Samuel Román</h5>
+                                <p className="text-secondary mb-0">Desarrollador de software</p>
                             </div>
                         </div>
                         <Link 
