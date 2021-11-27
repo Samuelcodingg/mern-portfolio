@@ -1,5 +1,5 @@
 # mern-portfolio
-An awesome fullstack web portfolio, the first I built was really simple, but this is pretty damn good.
+An awesome fullstack web portfolio, the first I built was really simple, but this is pretty damn good. This is deployed here: https://samuelcodingg.netlify.app/
 
 ## ¿Hos was did build it?
 As I said, this is a web fullstack project using the MERN stack, which includes MongoDB, Express, React, and Node.js. The architecture pattern is REST API, which means that the frontend is a single page application, and the backend is a REST API.
