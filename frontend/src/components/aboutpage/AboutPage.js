@@ -3,7 +3,7 @@ import img from './undraw_faq_re_31cw.svg';
 
 export const AboutPage = () => {
     return (
-        <div className="row">
+        <div className="row animate__animated animate__fadeIn min-vh-100">
             <div className="col-md-6 mx-auto">
                 <img src={img} alt="about" className="img-fluid" />
                 <h1 className="primary-color text-center" > Acerca </h1>

@@ -11,9 +11,9 @@ export const MainSection = ({ name, title, first_description }) => {
     return (
         <div className="row animate__animated animate__fadeIn">
             <div className="col-md-6 col-12">
-                <h1 className="text-center primary-color fs-1"> {name} </h1>
-                <h5 className="text-center fs-4 mt-2"><span className="typed-text"> {title}</span><span className="cursor typing">&nbsp;</span></h5>
-                <p className="fs-5 text-secondary mt-4" > {first_description} </p>
+                <h1 className="text-center primary-color fs-1 animate__animated animate__fadeIn"> {name} </h1>
+                <h5 className="text-center fs-4 mt-2"><span className="typed-text animate__animated animate__fadeIn"> {title}</span><span className="cursor typing">&nbsp;</span></h5>
+                <p className="fs-5 text-secondary mt-4 animate__animated animate__fadeIn" > {first_description} </p>
                 <div className="row text-center d-flex align-items-center">
                     <a
                         href='#perfil'

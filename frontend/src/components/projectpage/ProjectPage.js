@@ -30,14 +30,14 @@ export const ProjectPage = () => {
                     <img src={`${API}/projects/photo/${id}`} alt="project" className="rounded img-fluid shadow" />
                 </div>
                 <div className="col-12 col-md-5 mx-auto mt-4 mt-md-0 animate__animated animate__fadeIn min-vh-100">
-                    <h2 className="text-center text-md-start" > {project.name} </h2>
-                    <p className="mt-3">
+                    <h2 className="text-center text-md-start animate__animated animate__fadeIn" > {project.name} </h2>
+                    <p className="mt-3 animate__animated animate__fadeIn">
                         {project.description}
                     </p>
                     <div className="row">
                         {
                             project.web ?
-                                <div className="col-12 col-md-6 ">
+                                <div className="col-12 col-md-6 animate__animated animate__fadeIn">
                                     <a href={project.web} target="_blank" rel="noreferrer" className="mx-auto text-decoration-none d-block border-primary-color fw-bold hover-bg-dark animation-time primary-color py-2 text-center"><i className="fas fa-globe-americas fs-5"></i> &nbsp; SITIO WEB</a>
                                 </div>
                                 : null
@@ -45,7 +45,7 @@ export const ProjectPage = () => {
 
                         {
                             project.github && project.isPrivate === false ?
-                                <div className="col-12 col-md-6 mt-3 mt-md-0">
+                                <div className="col-12 col-md-6 mt-3 mt-md-0 animate__animated animate__fadeIn">
                                     <a href={project.github} target="_blank" rel="noreferrer" className="mx-auto text-decoration-none d-block border-primary-color fw-bold hover-bg-dark animation-time bg-primary-color text-white py-2 text-center rounded"><i className="fab fa-github fs-5"></i>&nbsp; GITHUB   </a>
                                 </div>
                                 :
@@ -59,7 +59,7 @@ export const ProjectPage = () => {
                         {
                             project.technologies ? 
                                 project.technologies.map(technology => (
-                                    <p className="primary-color px-3 py-2 "> <i className={`${technology.icon} fs-5`} ></i> &nbsp;  {technology.name}  </p>
+                                    <p className="primary-color px-3 py-2 animate__animated animate__fadeIn"> <i className={`${technology.icon} fs-5`} ></i> &nbsp;  {technology.name}  </p>
                                 ))
                                 : null
                         }

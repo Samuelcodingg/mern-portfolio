@@ -13,6 +13,7 @@ import { NavbarComponent } from '../components/ui/NavbarComponent';
 import 'animate.css';
 import { Footer } from '../components/ui/Footer';
 import { ProjectPage } from '../components/projectpage/ProjectPage';
+import { CvPage } from '../components/cvpage/CvPage';
 
 export const AppRouter = () => {
     return (
@@ -25,6 +26,7 @@ export const AppRouter = () => {
                     <Route exact path="/projects" component={ProjectsPage} />
                     <Route exact path="/projects/:id" component={ProjectPage} />
                     <Route exact path="/about" component={AboutPage} />
+                    <Route exact path="/cv" component={CvPage} />
                 </Switch>
             </div>
 
