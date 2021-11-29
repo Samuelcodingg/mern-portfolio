@@ -41,13 +41,15 @@ export const MainSection = () => {
                                 <p className="text-secondary mb-0">Desarrollador de software</p>
                             </div>
                         </div>
-                        <Link 
+                        <a 
                             className=" d-none d-md-block text-secondary text-decoration-none hover-bg-dark animation-time"
-                            to="mailto: samuelroman39@gmail.com"    
+                            href="mailto: samuelroman39@gmail.com"
+                            target="_blank"
+                            rel="noreferrer"  
                         >
                             ENVÍAME UN MENSAJE &nbsp;
                             <i className="fas fa-envelope"></i>
-                        </Link>
+                        </a>
                     </div>
                     <Link
                         to="/cv"
